@@ -1,6 +1,5 @@
 $(function(){
 
-
-  skrollr.init();
+  skrollr.init({});
 
 });
