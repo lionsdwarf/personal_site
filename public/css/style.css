@@ -4,7 +4,6 @@ svg {
 }
 
 path {
-  stroke-dasharray: 1000;
   fill: none;
   stroke: #fff;
   stroke-width: 2;
