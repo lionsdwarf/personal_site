@@ -1,10 +1,15 @@
+body {
+  margin: 0;
+}
+
 svg {
   width: 612px;
   height: 792px;
 }
 
-path {
-  stroke: #fff;
+#svg_uno {
+  fill: none;
+  stroke: black;
   stroke-width: 2;
   stroke-dasharray: 4000;
   stroke-dashoffset: 0;
