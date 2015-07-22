@@ -3,8 +3,8 @@ body {
 }
 
 svg {
-  width: 612px;
-  height: 792px;
+  width: 120%;
+  height: 120%;
 }
 
 #svg_uno {
@@ -15,3 +15,10 @@ svg {
   stroke-dashoffset: 0;
 }
 
+#svg_dos {
+  /*fill: none;*/
+  stroke: black;
+  stroke-width: 3;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 0;
+}
