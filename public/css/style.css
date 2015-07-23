@@ -8,17 +8,18 @@ svg {
 }
 
 #svg_uno {
-  fill: none;
-  stroke: black;
-  stroke-width: 2;
-  stroke-dasharray: 4000;
-  stroke-dashoffset: 0;
-}
-
-#svg_dos {
   /*fill: none;*/
   stroke: black;
   stroke-width: 3;
   stroke-dasharray: 3000;
   stroke-dashoffset: 0;
+}
+
+.project-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-repeat: no-repeat;
 }

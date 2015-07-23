@@ -11,6 +11,8 @@
   
   <script src="libraries/jquery.min.js"></script>
   <script src="libraries/skrollr_master/src/skrollr.js" type="text/javascript"></script>
+  <script src="libraries/noframework.waypoints.min.js"></script>
+  <script src="libraries/typed.js/js/typed.js" type="text/javascript"></script>
   <script src="js/app.js"></script>
 
   <!-- <link rel="stylesheet" href="css/skroll.css" data-skrollr-stylesheet="true"> -->
@@ -24,7 +26,7 @@
         data-100p="transform:translate(0,0%);" 
         style="background: url('assets/DSC03770.JPG') no-repeat; background-size: cover; width:100%; height:100%; position: fixed; color: white">
         
-        <svg version="1.1" id="svg_dos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="svg_uno" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
           <path id="welcome" fill="none" stroke="#010101" 
             data-0="stroke-dashoffset:3000;" data-20p="stroke-dashoffset:0;"
@@ -88,95 +90,69 @@
           <!-- <path id="svg_24" fill="none " stroke="#010101" d="M744.133,556.689c-2.547-1.691-3.185-2.255-3.185-3.383c0-0.563,0-1.127,0.638-1.127c0.637,0,0.637,0.563,0.637,1.127s0,1.128,0,1.691l0.636-0.563h0.638"/> -->
           </svg>
 
-<!-- <svg version="1.1" id="svg_dos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  >
-<path id="welcome-svg" fill="none" stroke="#000000" stroke-miterlimit="10" 
-data-0="stroke-dashoffset:3000;" data-50p="stroke-dashoffset:0;" stroke-linejoin="round";
-d="M117.629,43.206c-23.65,25.102-35.202,92.236-32.348,124.773
-  c6.465,73.683,35.766-13.232,40.129-37.09c0.792,15.011-3.493,83.096,29.44,62.998c29.009-17.702,35.746-81.913,35.781-111.407
-  c-0.763,23.05,1.044,49.697,4.146,72.612c3.479,25.706,37.743,1.942,18.905-16.069c-23.7,21.026,0.562,56.268,27.136,40.673
-  c19.105-11.213,23.523-42.367,22.886-62.278c-4.947,12.762-29.763,58.142-10.425,68.677c11.264,6.138,29.552-37.391,37.996-21.036
-  c-9.131-0.367-7.809,15.171-7.492,21.016c15.959,1.889,25.359-25.942,37.547-19.667c-11.893,9.101,4,27.026,9.45,14.869
-  c4.083-9.108-6.396-22.148-15.18-12.345c15.188,3.668,13.579,3.652,25.884-3.621c1.338,5.344,2.06,11.34-0.312,16.477
-  c4.463-6.504,8.502-8.369,14.291-13.426c2.073,4.612,0.658,9.939,0.151,14.735c-0.517-8.039,12.349-19.359,14.31-5.764
-  c3.918,27.164,27.938,5.573,18.854-1.958c-6.701-5.555-10.157,11.284-7.952,14.851c9.033,14.604,30.067-3.164,33.801-13.021"/>
-<path id="and-svg" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-10p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M132.629,277.206c-11.312-12.141-18.821,21.949-4.933,26.531
-  c4.125-5.625,1.682-17.494,2.087-24.688c3.21,6.21,2.865,24.489,10.6,27.279c7.949,2.867,7.79-21.168,13.982-23.863
-  c6.065-2.641,7.251,24.872,7.418,27.599c6.505-4.224,11.996-9.507,16.472-15.85c-0.964,4.732-3.707,17.767,6.18,16.006
-  c2.68-20.066,9.751-38.016,9.194-59.015"/>
-<path id="thanks-svg" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-25p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
- d="M334.368,370.309c36.776,8.082,48.205-126.284,48.1-143.229
-  c-9.901,22.46-10.682,48.683-11.756,72.818c-0.771,17.328-6.81,49.061,8.024,62.385c28.443,25.547,47.638-119.471,47.632-133.545
-  c0,20.969-0.299,42.124-4.456,62.758c-4.381,21.74-15.787,41.487-18.635,63.571c4.511-7.737,14.842-21.634,24.636-22.518
-  c11.911-1.075,2.768,25.171,5.455,30.781c7.337,15.314,37.118-28.809,49.788-27.043c-7.571,0.822-18.683,2.252-23.537,9.052
-  c-4.781,6.694-4.661,21.871,5.424,23.633c13.69,2.394,18.895-25.244,20.324-34.278c0,15.695-9.151,41.341,15.85,36.479
-  c0.871-16.731-7.271-48.105,21.019-44.835c20.322,2.352,13.474,32.271,14.308,45.796c20.74,11.887,17.826-122.748,17.826-127.713
-  c0,20.265,3.739,45.731-3.176,64.568c1.513-12.907,17.392-20.25,21.949-4.655c4.891,16.731-20.912,29.024-18.962,34.247
-  c2.434,6.513,10.615,22.941,18.335,24.521c13.249,2.709,13.491-20.66,20.876-24.697c7.688,11.764,3.166,38.757-14.92,27.326
-  c13.339,1.735,22.846,4.36,33.896,9.577"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-65p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M305.368,306.309c14.426,2.095,32.844-4.88,46.655-8.614
-  c18.154-4.91,37.602-7.894,55.345-13.386"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-66p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M120.361,670.346c19.318,2.246,52.767-49.942,56.834-67.666
-  c6.522,28.99-32.688,118.735-56.787,135.516c-22.901-33.449,47.489-71.146,69.989-85.967c-2.948,6.705-5.087,14.567-3.759,21.973
-  c11-0.28,18.944-11.346,14.242-21.794c9.508,4.637,19.629,8.925,29.406,2.967c0.143,13.685-7.928,30.537-1.926,42.973"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-70p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M50.717,395.302c5.272,24.078,14.996,53.653,24.418,76.484
-  c18.958-1.752,29.098-25.789,39.503-39.252c4.155-5.375,9.817-14.109,16.741-16.299c10.427-3.3,18.683,12.394,29.232,3.146
-  c2.991,11.061-13.56,63.2,2.886,65.369c18.126,2.39,36.121-41.428,40.468-54.683c25.508,2.094,3.739,72.66-25.635,50.917
-  c44.162,29.339,61.938-18.543,68.872-55.304c0.009,8.026-3.983,96.257,20.778,64.724c12.103-15.409,9.896-40.37,11.966-58.747
-  c2.759-24.514,9.474-53.939,22.829-74.937c-4.049,44.672-33.406,82.187-35.096,127.55c-0.537,14.406,4.607,25,20.396,17.299
-  c19.813-9.666,22.88-34.364,32.738-51.708c-0.299,15.131-0.745,30.667,0.114,45.708c26.327,4.462,22.147-23.224,22.277-42.562
-  c1.147,6.046,1.747,12.147,1.794,18.302c16.406-22.931,18.902,10.814,20.534,22.906c4.141,30.681,36.11-9.994,56.926-4.563
-  c-0.425-5.39-3.071-7.646-8.424-8.698c-0.989,3.789-1.828,7.477-2.392,11.127l0.363-2.632c-0.027-0.792-0.061-1.608-0.072-2.461
-  c-9.193,2.136-26.821,24.563-16.241,32.885c19.216,15.114,25.34-34.559,25.759-40.71c14.461,23.278-8.749,75.848-16.938,98.961
-  c-6.454-1.359-11.438-6.427-14.816-11.832"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-85p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M161.711,395.302c0,0.5,0,1,0,1.5"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-90p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M265.206,404.302c26.118,13.403,70.117-0.874,98.995,0"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-92p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M325.203,422.301c-0.5,0-1,0-1.5,0"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-87p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M247.207,402.802c-0.5,0-1,0-1.5,0"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-95p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M551.629,434.206c-15.23,35.582-35.283,69.217-52,104"/>
-<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-linejoin="round";
-data-99p="stroke-dashoffset:4000;" data-100p="stroke-dashoffset:0;"
-d="M477.629,574.206c1.036,1.403,2.303,2.535,3.801,3.396
-  c-0.561-1.709-1.042-3.724-1.801-5.396"/>
-
-</svg>
- -->
       </div> 
 
-      <div 
+      <div id="slide-2"
         data-0="transform:translate(0,100%);"
         data-100p="transform:translate(0,100%);"  
         data-200p="transform:translate(0,0%)" 
         style="background-color: yellowgreen; width:100%; height:100%; position: fixed;">
+        
+
       </div>
 
-      <div 
+      <div id="slide-3"
         data-0="transform:translate(0,100%);"
         data-300p="transform:translate(0,100%);"  
         data-400p="transform:translate(0,0%)" 
         style="background-color: hotpink; width:100%; height:100%; position: fixed;">
+        
+        <div id="project-previews" style="width: 100%; text-align: center; margin-top: 20em;">
+
+          <div id="jac-sf" style="width: 30%; display: inline-block;">
+            <h2 id="jac-heading" class="typed" style="height: 1.5em;"></h2>
+            <div class="description-overlay" style="position: relative;">
+              <div class="description" style="position: absolute; width: inherit; color: white; font-size: 22px; background-color: rgba(24,24,24, 0.7); padding: 0.8em;">
+                A sound sequencer to record, save and replay custom music tracks. Sound catalogues allow users to dynamically populate the keys with different "instruments".
+              </div>
+              <img src="assets/jac-sf-preview.png" alt="JACSoundfactory" style="width: 90%; border-radius: 0.8em;">
+              <a href="https://github.com/qodesmith/JAC-Sound-Factory" target="blank">
+                <img src="assets/github-logo.png" alt="github-logo" style="width: 10%; border-radius: 0.2em; display: block; margin: 0.7em auto;">
+              </a>
+            </div>
+          </div>
+
+          <div id="art-victim" style="width: 30%; display: inline-block;">
+            <h2 id="av-heading" class="typed" style="height: 1.5em;"></h2>
+            <div class="description-overlay" style="position: relative;">
+              <div class="description" style="position: absolute; width: inherit; color: white; font-size: 22px; background-color: rgba(24,24,24, 0.7); padding: 0.8em;">
+                A sound sequencer to record, save and replay custom music tracks. Sound catalogues allow users to dynamically populate the keys with different "instruments".
+              </div>
+              <img src="assets/art-victim-preview.png" alt="ArtVictim" style="width: 90%; border-radius: 0.8em;">
+              <a href="https://github.com/lionsdwarf/art-victim" target="blank">
+                <img src="assets/github-logo.png" alt="github-logo" style="width: 10%; border-radius: 0.2em; display: block; margin: 0.7em auto;">
+              </a>
+            </div>
+          </div>
+
+          <div id="happy-plantr" style="width: 30%; display: inline-block;">
+            <h2 id="hp-heading" class="typed" style="height: 1.5em;"></h2>
+            <div class="description-overlay" style="position: relative;">
+              <div class="description" style="position: absolute; width: inherit; color: white; font-size: 22px; background-color: rgba(24,24,24, 0.7); padding: 0.8em;">
+                A sound sequencer to record, save and replay custom music tracks. Sound catalogues allow users to dynamically populate the keys with different "instruments".
+              </div>
+              <img src="assets/happy-plantr-preview.png" alt="HappyPlantr" style="width: 90%; border-radius: 0.8em;">
+              <a href="https://github.com/lionsdwarf/happy-plant" target="_blank">
+                <img src="assets/github-logo.png" alt="github-logo" style="width: 10%; border-radius: 0.2em; display: block; margin: 0.7em auto;">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      <div 
+      <div id="slide-4"
         data-0="transform:translate(0,100%);"
         data-500p="transform:translate(0,100%);"  
         data-600p="transform:translate(0,0%)" 
