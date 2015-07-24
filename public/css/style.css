@@ -15,11 +15,12 @@ svg {
   stroke-dashoffset: 0;
 }
 
-.project-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-repeat: no-repeat;
+.description-overlay {
+ opacity: 0;
+  -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;
+}
+
+.image-box:hover .description-overlay {
+  opacity: 1;
 }
