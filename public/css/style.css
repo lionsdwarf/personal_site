@@ -3,8 +3,8 @@ body {
 }
 
 svg {
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
 }
 
 #svg_uno {
@@ -15,12 +15,3 @@ svg {
   stroke-dashoffset: 0;
 }
 
-.description-overlay {
- opacity: 0;
-  -webkit-transition: opacity .25s ease;
--moz-transition: opacity .25s ease;
-}
-
-.image-box:hover .description-overlay {
-  opacity: 1;
-}
