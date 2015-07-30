@@ -1,0 +1,39 @@
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+#svg-slide-1 {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  stroke-dashoffset: 0;
+}
+
+.spiral-hole {
+  stroke-dasharray: 50;
+}
+
+.spiral {
+  stroke-dasharray: 200;
+}
+
+#web-portfolio {
+  stroke-dasharray: 5600;
+}
+
+#portfolio-t {
+  stroke-dasharray: 150;
+}
+
+#portfolio-i {
+  stroke-dasharray: 50;
+}
+
+#by-lionsdwarf {
+  stroke-dasharray: 4500;
+}
+
+#lionsdwarf-i {
+  stroke-dasharray: 50;
+}
