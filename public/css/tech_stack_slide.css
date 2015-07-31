@@ -1,0 +1,32 @@
+.stack {
+  width: 49%;
+}
+
+.stack-left {
+  float: left;
+}
+
+.stack-right {
+  float: right;
+}
+
+#tech-stack-left li {
+  text-align: right;
+}
+
+#tech-stack-right li {
+  text-align: left;
+}
+
+li img {
+  height: 5em;
+  margin: 1em;
+}
+
+li div {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+}
