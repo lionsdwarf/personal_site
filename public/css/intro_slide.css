@@ -37,3 +37,7 @@ svg {
 #lionsdwarf-i {
   stroke-dasharray: 50;
 }
+
+#lionsdwarf-duplicates {
+  stroke-dasharray: 3500;
+}

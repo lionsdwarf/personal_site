@@ -4,17 +4,20 @@ App = {
 
 $(function(){
 
-  // setTimeout(function() {skrollr.init();}, 300); 
   //Slide - Intro
   skrollSpiralHoles();
   skrollSpiral();
   skrollWebPortfolio();
   skrollByLionsdwarf();
-  nextSlide();  
+  skrollLionsdwarfDuplicates();
+  slideFinalization($('#intro-slide'));
+  
   //Slide - Web projects
+  slideInitialization($('#web-projects-slide'));
   renderProject(projects.art_victim);
   renderProject(projects.jac_soundfactory);
   renderProject(projects.happy_plantr);
+  slideFinalization($('#web-projects-slide'));
 
   //Slide - Tech stack
   objectifyTech(techStackLeft);
