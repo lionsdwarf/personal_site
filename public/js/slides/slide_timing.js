@@ -1,5 +1,5 @@
 
-var slideInitialization = function(slide) {
+var initializeSlide = function(slide) {
   //Slide remains off screen for duration equal to prior slide's final scroll position
   var remainFixed = 'data-' + App.position + 'p';
   slide.attr(remainFixed, 'transform:translate(0, 100%)');
@@ -9,7 +9,7 @@ var slideInitialization = function(slide) {
   debugger;
 };
 
-var slideFinalization = function(slide) {
+var crap = function(slide) {
   //Slide remains fixed on screen for duration of scrolling
   var remainFixed = 'data-' + App.position + 'p';
   slide.attr(remainFixed, 'transform:translate(0, 0%)');

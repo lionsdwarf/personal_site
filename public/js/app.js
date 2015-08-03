@@ -10,14 +10,14 @@ $(function(){
   skrollWebPortfolio();
   skrollByLionsdwarf();
   skrollLionsdwarfDuplicates();
-  slideFinalization($('#intro-slide'));
+  finalizeSlide($('#intro-slide'));
   
   //Slide - Web projects
-  slideInitialization($('#web-projects-slide'));
+  initializeSlide($('#web-projects-slide'));
   renderProject(projects.art_victim);
   renderProject(projects.jac_soundfactory);
   renderProject(projects.happy_plantr);
-  slideFinalization($('#web-projects-slide'));
+  finalizeSlide($('#web-projects-slide'));
 
   //Slide - Tech stack
   objectifyTech(techStackLeft);
