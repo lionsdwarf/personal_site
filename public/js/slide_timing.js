@@ -7,7 +7,6 @@ var initializeSlide = function(slide) {
   App.position = App.position + 100;
   var transition = 'data-' + App.position + 'p';
   slide.attr(transition, 'transform: translate(0, 0%)');
-  debugger;
 };
 
 var finalizeSlide = function(slide) {
@@ -18,5 +17,4 @@ var finalizeSlide = function(slide) {
   var finalPosition = App.position + 100;
   var transition = 'data-' + finalPosition + 'p';
   slide.attr(transition, 'transform: translate(0, -100%)');
-  debugger;
 };

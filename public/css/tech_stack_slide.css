@@ -1,3 +1,7 @@
+#tech-stack-slide {
+  background-color: tomato;
+}
+
 .stack {
   width: 49%;
 }
@@ -29,4 +33,10 @@ li div {
 
 ul {
   list-style: none;
+}
+
+#tech-stack-svg {
+  stroke-dasharray: 3500;
+  position: absolute;
+
 }
