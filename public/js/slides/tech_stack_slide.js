@@ -38,14 +38,43 @@ var renderTech = function(techObject, domEl, template) {
 var showTechStacks = function() {
   $('#tech-stack-left').fadeIn(2500);
   $('#tech-stack-right').fadeIn(2500);
-}
+};
 
-var typeTech = function(tech) {
-  var dataName = tech.toLowerCase();
-  var domEl = $('#' + dataName + '-typed');
-  //Instantiate Typed.js object, per technology
-  domEl.typed({
-    strings: [tech],
-    typeSpeed: 20
+var typeStack = function(elementArray) {
+  $.each(elementArray, function(i, val) {
+    var dataName = val.toLowerCase();
+    var domEl = $('#' + dataName + '-typed');
+    //Instantiate Typed.js object, per technology
+    domEl.typed({
+      strings: [val],
+      typeSpeed: 20
+    });
   });
-}
+};
+
+var skrollWelcome = function() {
+  var elementArray = [$('#tech-stack-svg')];
+  var scrollDuration = 20;
+  setSkrollrAttr(elementArray, scrollDuration);
+};
+
+// var typeTech = function(tech) {
+//   var dataName = tech.toLowerCase();
+//   var domEl = $('#' + dataName + '-typed');
+//   //Instantiate Typed.js object, per technology
+//   domEl.typed({
+//     strings: [tech],
+//     typeSpeed: 20
+//   });
+// };
+
+// var typedWaypoint = function() {
+//   var offset = '-' + App.position + '%';
+//   var waypoint = new Waypoint({
+//     element: document.getElementById('tech-stack-slide'),
+//     handler: function() {
+//       typeLeftTechStack();
+//     },
+//     offset: offset
+//   });
+// };

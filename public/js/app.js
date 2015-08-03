@@ -20,27 +20,21 @@ $(function(){
   finalizeSlide($('#web-projects-slide'));
 
   //Slide - Tech stack
+  initializeSlide($('#tech-stack-slide'));
   objectifyTech(techStackLeft);
   objectifyTech(techStackRight);
-  showTechStacks();  
+  showTechStacks();
+  skrollWelcome();
+  finalizeSlide($('#tech-stack-slide'));  
   // typeTech();
 
-  skrollr.init();
-  
-  var waypoint = new Waypoint({
-    element: document.getElementById('slide-4'),
-    handler: function() {
-      typeTech('Node');
-    },
-    offset: '-650%'
-  });
-
-  var waypoint = new Waypoint({
-    element: document.getElementById('slide-4'),
-    handler: function() {
-      typeTech('jQuery');
-    },
-    offset: '-680%'
+  skrollr.init({
+    render: function() {
+      if ($('#tech-stack-svg').hasClass('skrollable-after')) {
+        typeStack(techStackLeft.technologies);
+        typeStack(techStackRight.technologies);
+      }
+    }
   });
 
 });
