@@ -1,15 +1,14 @@
 App = {
-  position: 0
+  position: 1
 };
 
 $(function(){
 
   //Slide - Intro
-  skrollSpiralHoles();
-  skrollSpiral();
-  skrollWebPortfolio();
-  skrollByLionsdwarf();
-  skrollLionsdwarfDuplicates();
+  toggleScrollMsg();
+  skrollIntroSVG();
+  skrollLeinsdorf();
+  skrollLeinsdorfDuplicates();
   finalizeSlide($('#intro-slide'));
   
   //Slide - Web projects
@@ -30,11 +29,10 @@ $(function(){
 
   skrollr.init({
     render: function() {
-      if ($('#tech-stack-svg').hasClass('skrollable-after')) {
-        typeStack(techStackLeft.technologies);
-        typeStack(techStackRight.technologies);
-      }
-    }
+      showScrollMsg();
+      hideScrollMsg();
+      delayTypeStack();
+   }
   });
 
 });

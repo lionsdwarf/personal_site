@@ -58,23 +58,9 @@ var skrollWelcome = function() {
   setSkrollrAttr(elementArray, scrollDuration);
 };
 
-// var typeTech = function(tech) {
-//   var dataName = tech.toLowerCase();
-//   var domEl = $('#' + dataName + '-typed');
-//   //Instantiate Typed.js object, per technology
-//   domEl.typed({
-//     strings: [tech],
-//     typeSpeed: 20
-//   });
-// };
-
-// var typedWaypoint = function() {
-//   var offset = '-' + App.position + '%';
-//   var waypoint = new Waypoint({
-//     element: document.getElementById('tech-stack-slide'),
-//     handler: function() {
-//       typeLeftTechStack();
-//     },
-//     offset: offset
-//   });
-// };
+var delayTypeStack = function() {
+  if ($('#tech-stack-svg').hasClass('skrollable-after')) {
+    typeStack(techStackLeft.technologies);
+    typeStack(techStackRight.technologies);
+  }
+};
