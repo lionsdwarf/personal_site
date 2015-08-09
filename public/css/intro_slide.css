@@ -2,46 +2,53 @@
   background-color: rgba(255,105,180, 0.8);
 }
 
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-#svg-slide-1 {
+.full-svg svg { 
   fill: none;
   stroke: black;
   stroke-width: 3;
   stroke-dashoffset: 0;
+  position: absolute;
 }
 
-.spiral-hole {
-  stroke-dasharray: 50;
+#leinsdorf-svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-.spiral {
-  stroke-dasharray: 200;
+#leinsdorf {
+  stroke-dasharray: 8000;
 }
 
-#web-portfolio {
-  stroke-dasharray: 5600;
+#leinsdorf-i {
+  stroke-dasharray: 100;
 }
 
-#portfolio-t {
-  stroke-dasharray: 150;
+#leinsdorf-duplicates {
+  stroke-dasharray: 80000;
 }
 
-#portfolio-i {
-  stroke-dasharray: 50;
+#intro-svg {
+  stroke-dasharray: 100;
 }
 
-#by-lionsdwarf {
-  stroke-dasharray: 4500;
+.centered {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
-#lionsdwarf-i {
-  stroke-dasharray: 50;
+#arrow-wrapper {
+  margin-top: 2em;
+  width: 79px;
 }
 
-#lionsdwarf-duplicates {
-  stroke-dasharray: 3500;
+#scroll-arrow-wrapper {
+  position: absolute;
+  top: 80%;
+  width: 200px; 
+}
+
+#pls-scroll-wrapper {
+  opacity: 0;
 }
