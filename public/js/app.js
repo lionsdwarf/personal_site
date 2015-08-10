@@ -6,8 +6,10 @@ $(function(){
 
   //Slide - Intro
   toggleScrollMsg();
-  skrollIntroSVG();
+  skrollIntroDiv();
   skrollLeinsdorf();
+  skrollWelcome();
+  skrollInvisibleWelcome();
   skrollLeinsdorfDuplicates();
   finalizeSlide($('#intro-slide'));
   
@@ -23,7 +25,6 @@ $(function(){
   objectifyTech(techStackLeft);
   objectifyTech(techStackRight);
   showTechStacks();
-  skrollWelcome();
   finalizeSlide($('#tech-stack-slide'));  
   // typeTech();
 
@@ -31,6 +32,7 @@ $(function(){
     render: function() {
       showScrollMsg();
       hideScrollMsg();
+      hideWelcomeMsg();
       delayTypeStack();
    }
   });

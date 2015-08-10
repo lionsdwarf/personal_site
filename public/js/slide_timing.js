@@ -18,3 +18,8 @@ var finalizeSlide = function(slide) {
   var transition = 'data-' + finalPosition + 'p';
   slide.attr(transition, 'transform: translate(0, -100%)');
 };
+
+
+var skrollGap = function(value) {
+  App.position = App.position + value;
+}; 
