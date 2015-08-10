@@ -38,20 +38,9 @@
   width: 100%; 
   height: 100%;
   border-radius: 8px; 
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
 }
-/*
-#jac-img {
-  background: url('../assets/jac-sf-preview.png') no-repeat center;
-  background-size: cover; 
-}
-
-#hp-img {
-  background: url('../assets/happy-plantr-preview.png') no-repeat center; 
-  background-size: cover; 
-}*/
 
 .image-box:hover .description-overlay {
   opacity: 1;
@@ -65,7 +54,7 @@
   font-size: 22px; 
   background-color: rgba(24,24,24, 0.7); 
   overflow: scroll; 
-  border-radius: 5px; 
+  border-radius: 8px; 
   width: inherit; 
   height: inherit;
 }
@@ -83,33 +72,17 @@
   height: 2em; 
   border-radius: 0.2em; 
   display: inline-block; 
+  left: 0;
+  right: 0;
   margin: 0.7em auto;
   position: absolute;
 }
 
-.github-logo-silhouette {
-}
-
-.github-logo-silhouette:hover {
+.github-logo-fill {
   opacity: 0;
 }
-
-/*.github-logo-fill {
-  opacity: 0;
-}*/
-/*
-.github-logo-fill:hover {
-  opacity: 1;
-}*/
-
-/*.github-logo:hover {
-  opacity: 0;
-}*/
 
 .github-overlay {
-  background: url('../assets/octicon_fill.png');
-  width: 7%;
-  height: 10%;
-  display: inline-block; 
-
+  position: relative;
+  width: 100%;
 }

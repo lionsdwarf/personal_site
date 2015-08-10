@@ -24,31 +24,45 @@
   stroke-dasharray: 100;
 }
 
+#welcome-excl-pt {
+  stroke-dasharray: 1100;
+}
+
+#welcome-invisible {
+  display: none;
+  stroke-dasharray: 3000;
+}
+
 #leinsdorf-duplicates {
   stroke-dasharray: 80000;
 }
 
-#intro-svg {
+.invisible {
   stroke-dasharray: 100;
+  opacity: 0;
 }
 
 .centered {
   left: 0;
   right: 0;
   margin: 0 auto;
+  position: absolute;
 }
 
 #arrow-wrapper {
-  margin-top: 2em;
+  margin-top: 3em;
   width: 79px;
 }
 
-#scroll-arrow-wrapper {
-  position: absolute;
+#arrow-scroll-wrapper {
   top: 80%;
   width: 200px; 
 }
 
 #pls-scroll-wrapper {
   opacity: 0;
+}
+
+#pls-scroll {
+  width: 7em;
 }

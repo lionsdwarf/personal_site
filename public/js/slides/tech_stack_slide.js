@@ -52,12 +52,6 @@ var typeStack = function(elementArray) {
   });
 };
 
-var skrollWelcome = function() {
-  var elementArray = [$('#tech-stack-svg')];
-  var scrollDuration = 20;
-  setSkrollrAttr(elementArray, scrollDuration);
-};
-
 var delayTypeStack = function() {
   if ($('#tech-stack-svg').hasClass('skrollable-after')) {
     typeStack(techStackLeft.technologies);
