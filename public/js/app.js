@@ -5,7 +5,7 @@ App = {
 $(function(){
 
   //Slide - Intro
-  toggleScrollMsg();
+  showScrollMsg();
   skrollIntroDiv();
   skrollLeinsdorf();
   skrollWelcome();
@@ -18,6 +18,7 @@ $(function(){
   renderProject(projects.art_victim);
   renderProject(projects.jac_soundfactory);
   renderProject(projects.happy_plantr);
+  skrollWebDev();
   finalizeSlide($('#web-projects-slide'));
 
   //Slide - Tech stack
@@ -30,9 +31,8 @@ $(function(){
 
   skrollr.init({
     render: function() {
-      showScrollMsg();
-      hideScrollMsg();
-      hideWelcomeMsg();
+      toggleScrollMsgDisplay();
+      toggleWelcomeMsgDisplay();
       delayTypeStack();
    }
   });

@@ -4,9 +4,9 @@
 
 .grid-container {
   width: 100%; 
-  height: 100%; 
+  height: 90%; 
   text-align: center; 
-  margin-top: 2em;
+  margin-top: 8em;
 }
 
 .row {
@@ -53,7 +53,7 @@
   color: white; 
   font-size: 22px; 
   background-color: rgba(24,24,24, 0.7); 
-  overflow: scroll; 
+  overflow: hidden; 
   border-radius: 8px; 
   width: inherit; 
   height: inherit;
@@ -85,4 +85,16 @@
 .github-overlay {
   position: relative;
   width: 100%;
+}
+
+#web-dev-svg {
+  stroke-dasharray: 750;
+  position: absolute;
+  width: 120%;
+  height: 100%;
+}
+
+#dev-connector {
+  stroke-dasharray: 1650;
+
 }

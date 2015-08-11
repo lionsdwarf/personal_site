@@ -1,5 +1,5 @@
 //Reveal 'Pls scroll' on arrow hover
-var toggleScrollMsg = function() {
+var showScrollMsg = function() {
   $('#arrow-wrapper').hover(function() {
     // $(this).css('opacity', 0);
     $('#pls-scroll-wrapper').css('opacity', 1);
@@ -7,24 +7,20 @@ var toggleScrollMsg = function() {
     $(this).css('opacity', 1);
     $('#pls-scroll-wrapper').css('opacity', 0);
   });
-
 };
 //hide 'arrow' and 'pls scroll' once skrolling begins
-var hideScrollMsg = function() {
+var toggleScrollMsgDisplay = function() {
   if ($('#arrow-scroll-div').hasClass('skrollable-after')) {
     $('#pls-scroll').hide();
     $('#arrow').hide();
-  };
-};
-//show 'arrow' and 'pls scroll' until skrolling begins
-var showScrollMsg = function() {
-  if ($('#arrow-scroll-div').hasClass('skrollable-before')) {
+  }
+  else if ($('#arrow-scroll-div').hasClass('skrollable-before')) {
     $('#pls-scroll').show();
     $('#arrow').show();
   };
 };
 //hide the Welcome msg after invisible Welcome skrolls
-var hideWelcomeMsg = function() {
+var toggleWelcomeMsgDisplay = function() {
   if ($('#welcome-invisible').hasClass('skrollable-after')) {
     $('#welcome-excl-pt').fadeOut(200);
   }
@@ -33,13 +29,7 @@ var hideWelcomeMsg = function() {
   };
 };
 
-//Skroll intro div, which triggers hide/show of scroll msg
-var skrollIntroDiv = function() {
-  var elementArray = [$('#arrow-scroll-div')];
-  var scrollDuration = 0.5;
-  setSkrollrAttr(elementArray, scrollDuration); 
-};
-
+//skroll visible svgs
 var skrollLeinsdorf = function() {
   var elementArray = [
     $('#leinsdorf'),
@@ -64,8 +54,13 @@ var skrollWelcome = function() {
 //scroll invisible Welcome message to trigger .hide()
 var skrollInvisibleWelcome = function() {
   var elementArray = [$('#welcome-invisible')];
-  console.log(elementArray)
   var scrollDuration = 4;
   setSkrollrAttr(elementArray, scrollDuration);
 };
 
+//Skroll invisible intro div, which triggers hide/show of scroll msg
+var skrollIntroDiv = function() {
+  var elementArray = [$('#arrow-scroll-div')];
+  var scrollDuration = 0.5;
+  setSkrollrAttr(elementArray, scrollDuration); 
+};
