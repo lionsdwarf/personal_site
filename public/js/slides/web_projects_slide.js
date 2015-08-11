@@ -7,3 +7,9 @@ var renderProject = function(projectObject) {
   var domEl = projectObject.dom_el;
   $(domEl).append(html);
 };
+
+var skrollWebDev = function() {
+  var elementArray = $('#web-dev-svg').children();
+  var scrollDuration = 15;
+  setSkrollrAttr(elementArray, scrollDuration);
+};
