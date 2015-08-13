@@ -11,5 +11,5 @@ var renderProject = function(projectObject) {
 var skrollWebDev = function() {
   var elementArray = $('#web-dev-svg').children();
   var scrollDuration = 15;
-  setSkrollrAttr(elementArray, scrollDuration);
+  skrollSVG(elementArray, scrollDuration);
 };
