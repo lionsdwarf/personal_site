@@ -96,5 +96,8 @@
 
 #dev-connector {
   stroke-dasharray: 1650;
+}
 
+#web-connector {
+  stroke-dasharray: 1300;
 }

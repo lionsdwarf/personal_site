@@ -15,3 +15,9 @@ var setSkrollrAttr = function(elementArray, scrollDuration) {
     App.position = finalPosition;
   });
 };
+
+var hideSVG = function(elementArray, scrollDuration) {
+  $.each(elementArray, function(i, val) {
+    
+  });
+};

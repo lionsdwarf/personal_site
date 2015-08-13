@@ -2,6 +2,10 @@
   background-color: tomato;
 }
 
+#tech-stack-svg {
+  position: absolute;
+}
+
 .stack {
   width: 49%;
 }
@@ -35,8 +39,3 @@ ul {
   list-style: none;
 }
 
-#tech-stack-svg {
-  stroke-dasharray: 3500;
-  position: absolute;
-
-}
