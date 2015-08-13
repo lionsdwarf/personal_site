@@ -6,10 +6,11 @@ $(function(){
 
   //Slide - Intro
   showScrollMsg();
+  hideElement($('#arrow-scroll-wrapper'), 0.2);
   skrollIntroDiv();
   skrollLeinsdorf();
   skrollWelcome();
-  skrollInvisibleWelcome();
+  hideElement($('#welcome-excl-pt'), 1);
   skrollLeinsdorfDuplicates();
   finalizeSlide($('#intro-slide'));
   
@@ -31,8 +32,6 @@ $(function(){
 
   skrollr.init({
     render: function() {
-      toggleScrollMsgDisplay();
-      toggleWelcomeMsgDisplay();
       delayTypeStack();
    }
   });

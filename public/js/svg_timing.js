@@ -1,4 +1,4 @@
-var setSkrollrAttr = function(elementArray, scrollDuration) {
+var skrollSVG = function(elementArray, scrollDuration) {
   $.each(elementArray, function(i, val) {
     var element = $(val);
     //At initial scroll position, set stroke-dashoffset equal to element's stroke-dasharray 
@@ -16,8 +16,11 @@ var setSkrollrAttr = function(elementArray, scrollDuration) {
   });
 };
 
-var hideSVG = function(elementArray, scrollDuration) {
-  $.each(elementArray, function(i, val) {
-    
-  });
+var hideElement = function(element, scrollDuration) {
+  var iDataAttr = 'data-' + App.position + 'p';
+  element.attr(iDataAttr, 'opacity: 1');
+  var finalPosition = App.position + scrollDuration;
+  var fDataAttr = 'data-' + finalPosition + 'p';
+  element.attr(fDataAttr, 'opacity: 0');
+  App.position = finalPosition;
 };
