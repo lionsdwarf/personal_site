@@ -4,6 +4,9 @@ App = {
 
 $(function(){
 
+  //Slide - About me
+  hideElement($('#about-me'), 8);
+
   //Slide - Intro
   showScrollMsg();
   hideElement($('#arrow-scroll-wrapper'), 0.2);
@@ -16,6 +19,7 @@ $(function(){
   
   //Slide - Web projects
   initializeSlide($('#web-projects-slide'));
+  renderCSProject(projects.future_type);
   renderProject(projects.art_victim);
   renderProject(projects.jac_soundfactory);
   renderProject(projects.happy_plantr);
@@ -24,16 +28,22 @@ $(function(){
 
   //Slide - Tech stack
   initializeSlide($('#tech-stack-slide'));
+  skrollTekStak();
+  skrollInvisibleDiv();
+  skrollGap(30);
   objectifyTech(techStackLeft);
   objectifyTech(techStackRight);
   showTechStacks();
   finalizeSlide($('#tech-stack-slide'));  
-  // typeTech();
+
+  //Slide - Mission contact
+  initializeSlide($('#mission-contact-slide'));
+  renderEmail();
+  endSkrollr($('#mission-contact-slide'));
 
   skrollr.init({
     render: function() {
-      delayTypeStack();
+      typeStacks();
    }
   });
-
 });

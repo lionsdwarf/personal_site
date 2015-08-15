@@ -1,6 +1,7 @@
-body {
+body, html {
   margin: 0;
-  font-family: 'Special Elite', sans-serif;
+  font-family: 'Lato', sans-serif;
+  /*font-family: 'Special Elite', sans-serif;*/
 }
 
 .slide {
@@ -8,6 +9,7 @@ body {
   height:100%; 
   position: fixed; 
 }
+
 
 
 
