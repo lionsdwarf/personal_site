@@ -1,0 +1,79 @@
+#tech-stack-slide {
+  background-color: rgba(250,169,6,0.8);
+}
+
+#tech-stack-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#tek-connector{ 
+  stroke-dasharray: 3150;
+}
+
+#tek-stak {
+  stroke-dasharray: 1500;
+}
+
+#stak-connector {
+  stroke-dasharray: 1000;
+}
+
+#tek-t {
+  stroke-dasharray: 100;
+}
+
+#stak-t {
+  stroke-dasharray: 100;
+}
+
+#typed-svg-invisible {
+  display: none;
+  stroke-dasharray: 50;
+}
+
+.stack {
+  width: 49%;
+  margin-top: 2em;
+}
+
+.stack-left {
+  float: left;
+}
+
+.stack-right {
+  float: right;
+}
+
+#tech-stack-left li {
+  text-align: right;
+}
+
+#tech-stack-right li {
+  text-align: left;
+}
+
+#tech-stack-slide li img {
+  height: 3.2em;
+  margin: 1em;
+}
+
+#tech-stack-slide li div {
+}
+
+#tech-stack-slide ul {
+  list-style: none;
+}
+
+.tech-name {
+  font-size: 2em;
+  display: inline;
+  vertical-align: 80%
+}
+
+.tech-img-div {
+  display: inline-block;
+  width: 5.8em;
+  height: 3.2em;
+}

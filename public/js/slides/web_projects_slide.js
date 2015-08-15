@@ -8,6 +8,14 @@ var renderProject = function(projectObject) {
   $(domEl).append(html);
 };
 
+var renderCSProject = function(projectObject) {
+  var template = Handlebars.compile($('#cs-project-template').html()); 
+  var context = projectObject;
+  var html = template(context);
+  var domEl = projectObject.dom_el;
+  $(domEl).append(html);
+};
+
 var skrollWebDev = function() {
   var elementArray = $('#web-dev-svg').children();
   var scrollDuration = 15;

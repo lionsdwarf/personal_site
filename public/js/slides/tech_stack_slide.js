@@ -52,9 +52,21 @@ var typeStack = function(elementArray) {
   });
 };
 
-var delayTypeStack = function() {
-  if ($('#tech-stack-svg').hasClass('skrollable-after')) {
+var typeStacks = function() {
+  if ($('#typed-svg-invisible').hasClass('skrollable-after')) {
     typeStack(techStackLeft.technologies);
     typeStack(techStackRight.technologies);
   }
 };
+
+var skrollTekStak = function() {
+  var elementArray = $('#tech-stack-svg').children();
+  var scrollDuration = 15;
+  skrollSVG(elementArray, scrollDuration);
+};
+
+var skrollInvisibleDiv = function() {
+  var elementArray = [$('#typed-svg-invisible')];
+  var scrollDuration = 4;
+  skrollSVG(elementArray, scrollDuration);
+}

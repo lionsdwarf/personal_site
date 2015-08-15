@@ -19,6 +19,11 @@ var finalizeSlide = function(slide) {
   slide.attr(transition, 'transform: translate(0, -100%)');
 };
 
+var endSkrollr = function(slide) {
+  var remainFixed = 'data-' + App.position + 'p';
+  slide.attr(remainFixed, 'transform:translate(0, 0%)');
+};
+
 
 var skrollGap = function(value) {
   App.position = App.position + value;

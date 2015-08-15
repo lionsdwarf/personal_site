@@ -33,7 +33,8 @@ var techStackLeft = {
   'Node',
   'jQuery',
   'HTML5',
-  'CSS3' 
+  'CSS3',
+  'Photoshop' 
   ]
 };
 
@@ -45,7 +46,8 @@ var techStackRight = {
   'PostgreSQL',
   'Github',
   'Mocha',
-  'RSpec' 
+  'RSpec',
+  'Illustrator' 
   ]
 };
 
@@ -73,5 +75,13 @@ var projects = {
     'github_url' : 'https://github.com/lionsdwarf/happy-plant',
     'description' : 'A watering notification tool for plant owners. Sends MMS notifications according to user-defined plant watering schedules.',
     'dom_el' : '#row-1-col-1'
+  },
+  'future_type' : {
+    'name' : 'Future Type',
+    'data_name' : 'future-type',
+    'project_url' : 'none',
+    'github_url' : 'https://github.com/lionsdwarf/future-type',
+    'description' : 'The official band website -- COMING SOON',
+    'dom_el' : '#row-0-col-0'
   }
 }
