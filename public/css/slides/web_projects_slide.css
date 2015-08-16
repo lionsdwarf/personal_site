@@ -6,7 +6,7 @@
   width: 100%; 
   height: 90%; 
   text-align: center; 
-  margin-top: 8em;
+  margin-top: 6em;
 }
 
 .row {
@@ -94,7 +94,7 @@
 #web-dev-svg {
   stroke-dasharray: 750;
   position: absolute;
-  width: 120%;
+  width: 100%;
   height: 100%;
 }
 

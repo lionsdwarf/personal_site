@@ -61,7 +61,7 @@ var typeStacks = function() {
 
 var skrollTekStak = function() {
   var elementArray = $('#tech-stack-svg').children();
-  var scrollDuration = 15;
+  var scrollDuration = 12;
   skrollSVG(elementArray, scrollDuration);
 };
 
