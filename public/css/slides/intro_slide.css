@@ -28,6 +28,14 @@
   stroke-dasharray: 1100;
 }
 
+#nyc {
+  stroke-dasharray: 400;
+}
+
+#nyc-dot {
+  stroke-dasharray: 200;
+}
+
 #welcome-invisible {
   display: none;
   stroke-dasharray: 3000;

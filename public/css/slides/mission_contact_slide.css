@@ -3,6 +3,28 @@
   color: black;
 }
 
+#about-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#about-connector {
+  stroke-dasharray: 2500;
+}
+
+#about {
+  stroke-dasharray: 1000;  
+}
+
+#about-a {
+  stroke-dasharray: 50;
+}
+
+#about-t {
+  stroke-dasharray: 100;
+}
+
 #article-wrapper {
   width: 90%;
   height: 40%;

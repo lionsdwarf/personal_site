@@ -13,9 +13,15 @@ var showScrollMsg = function() {
 var skrollLeinsdorf = function() {
   var elementArray = [
     $('#leinsdorf'),
-    $('#leinsdorf-i')
+    $('#leinsdorf-i'),
     ];
   var scrollDuration = 8;
+  skrollSVG(elementArray, scrollDuration);
+};
+
+var skrollDotNYC = function() {
+  var elementArray = $('#dot-nyc').children();
+  var scrollDuration = 2;
   skrollSVG(elementArray, scrollDuration);
 };
 
@@ -29,18 +35,4 @@ var skrollWelcome = function() {
   var elementArray = $('#welcome-excl-pt').children();
   var scrollDuration = 4;
   skrollSVG(elementArray, scrollDuration);
-};
-
-//scroll invisible Welcome message to trigger .hide()
-var skrollInvisibleWelcome = function() {
-  var elementArray = [$('#welcome-invisible')];
-  var scrollDuration = 4;
-  skrollSVG(elementArray, scrollDuration);
-};
-
-//Skroll invisible intro div, which triggers hide/show of scroll msg
-var skrollIntroDiv = function() {
-  var elementArray = [$('#arrow-scroll-div')];
-  var scrollDuration = 0.5;
-  skrollSVG(elementArray, scrollDuration); 
 };

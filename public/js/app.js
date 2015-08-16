@@ -10,9 +10,11 @@ $(function(){
   //Slide - Intro
   showScrollMsg();
   hideElement($('#arrow-scroll-wrapper'), 0.2);
-  skrollIntroDiv();
+  // skrollIntroDiv();
   skrollLeinsdorf();
+  skrollDotNYC();
   skrollWelcome();
+  hideElement($('#dot-nyc'), 1);
   hideElement($('#welcome-excl-pt'), 1);
   skrollLeinsdorfDuplicates();
   finalizeSlide($('#intro-slide'));
@@ -39,6 +41,7 @@ $(function(){
   //Slide - Mission contact
   initializeSlide($('#mission-contact-slide'));
   renderEmail();
+  skrollAbout();
   endSkrollr($('#mission-contact-slide'));
 
   skrollr.init({
