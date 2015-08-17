@@ -1,5 +1,6 @@
 #tech-stack-slide {
-  background-color: rgba(250,169,6,0.8);
+  background: url('../../assets/backgrounds/fly.jpg'); 
+  background-size: cover;
 }
 
 #tech-stack-svg {
