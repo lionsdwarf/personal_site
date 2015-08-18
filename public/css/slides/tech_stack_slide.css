@@ -1,50 +1,31 @@
 #tech-stack-slide {
-  background: url('../../assets/backgrounds/fly.jpg'); 
+  background: url('../../assets/backgrounds/abstract.jpg'); 
   background-size: cover;
 }
 
-#tech-stack-svg {
+#tek-svg {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -10;
 }
 
-#tek-connector{ 
-  stroke-dasharray: 3350;
-}
-
-#tek-stak {
-  stroke-dasharray: 1500;
-}
-
-#stak-connector {
-  stroke-dasharray: 1000;
+#tek{
+  stroke-dasharray: 7000;
 }
 
 #tek-t {
-  stroke-dasharray: 100;
-}
-
-#stak-t {
-  stroke-dasharray: 100;
+  stroke-dasharray: 800;
 }
 
 #typed-svg-invisible {
-  display: none;
-  stroke-dasharray: 50;
+  stroke-dasharray: 150;
 }
 
 .stack {
   width: 49%;
   margin-top: 2em;
-}
-
-.stack-left {
   float: left;
-}
-
-.stack-right {
-  float: right;
 }
 
 #tech-stack-left li {
@@ -56,11 +37,8 @@
 }
 
 #tech-stack-slide li img {
-  height: 3.2em;
+  height: 4em;
   margin: 1em;
-}
-
-#tech-stack-slide li div {
 }
 
 #tech-stack-slide ul {
@@ -70,7 +48,7 @@
 .tech-name {
   font-size: 2em;
   display: inline;
-  vertical-align: 80%
+  vertical-align: 100%;
 }
 
 .tech-img-div {

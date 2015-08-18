@@ -13,29 +13,36 @@ $(function(){
   // skrollIntroDiv();
   skrollLeinsdorf();
   skrollDotNYC();
-  skrollWelcome();
   hideElement($('#dot-nyc'), 1);
-  hideElement($('#welcome-excl-pt'), 1);
   skrollLeinsdorfDuplicates();
   finalizeSlide($('#intro-slide'));
   
   //Slide - Web projects
+  $('.row').css('opacity', 0);
   initializeSlide($('#web-projects-slide'));
   renderCSProject(projects.future_type);
   renderProject(projects.art_victim);
   renderProject(projects.jac_soundfactory);
   renderProject(projects.happy_plantr);
-  skrollWebDev();
+  skrollDev();
+  skrollGap(1);
+  fadeElement($('#dev-svg'), 10);
+  showElement($('.row'), 10);
+  skrollGap(20);
+  $('.col').hover(function() {$(this).find('.github-logo').css('opacity', 1)}, function() {$(this).find('.github-logo').css('opacity', 0)})
   finalizeSlide($('#web-projects-slide'));
 
   //Slide - Tech stack
+  $('.stack').css('opacity', 0);
   initializeSlide($('#tech-stack-slide'));
-  skrollTekStak();
+  skrollTek();
+  skrollGap(1);
+  fadeElement($('#tek-svg'), 10);
+  showElement($('.stack'), 10);
   skrollInvisibleDiv();
-  skrollGap(30);
+  skrollGap(20);
   objectifyTech(techStackLeft);
   objectifyTech(techStackRight);
-  showTechStacks();
   finalizeSlide($('#tech-stack-slide'));  
 
   //Slide - Mission contact

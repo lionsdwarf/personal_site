@@ -1,5 +1,5 @@
 #intro-slide {
-  background-color: rgba(255,105,180, 0.7);
+  background-color: rgba(255,105,180, 0.85);
 }
 
 .intro-slide-svg svg { 
@@ -23,10 +23,10 @@
 #leinsdorf-i {
   stroke-dasharray: 100;
 }
-
+/*
 #welcome-excl-pt {
   stroke-dasharray: 1100;
-}
+}*/
 
 #nyc {
   stroke-dasharray: 400;
@@ -36,18 +36,8 @@
   stroke-dasharray: 200;
 }
 
-#welcome-invisible {
-  display: none;
-  stroke-dasharray: 3000;
-}
-
 #leinsdorf-duplicates {
   stroke-dasharray: 80000;
-}
-
-.invisible {
-  stroke-dasharray: 100;
-  opacity: 0;
 }
 
 .centered {

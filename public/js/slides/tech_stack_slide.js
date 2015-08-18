@@ -24,8 +24,6 @@ var defineObject = function(techObject, domEl) {
     var template = Handlebars.compile($('#tech-template-right').html()); 
     renderTech(techObject, domEl, template);
   }
-  $('#tech-stack-left').hide();
-  $('#tech-stack-right').hide();
 };
 
 var renderTech = function(techObject, domEl, template) {
@@ -33,11 +31,6 @@ var renderTech = function(techObject, domEl, template) {
   var context = techObject;
   var html = template(context);
   $(domEl).append(html);
-};
-
-var showTechStacks = function() {
-  $('#tech-stack-left').fadeIn(2500);
-  $('#tech-stack-right').fadeIn(2500);
 };
 
 var typeStack = function(elementArray) {
@@ -59,14 +52,17 @@ var typeStacks = function() {
   }
 };
 
-var skrollTekStak = function() {
-  var elementArray = $('#tech-stack-svg').children();
-  var scrollDuration = 12;
+var skrollTek = function() {
+  var elementArray = [
+    $('#tek'), 
+    $('#tek-t')
+    ];
+  var scrollDuration = 9;
   skrollSVG(elementArray, scrollDuration);
 };
 
 var skrollInvisibleDiv = function() {
   var elementArray = [$('#typed-svg-invisible')];
-  var scrollDuration = 4;
+  var scrollDuration = 1;
   skrollSVG(elementArray, scrollDuration);
-}
+};

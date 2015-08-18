@@ -6,6 +6,8 @@ var renderProject = function(projectObject) {
   var html = template(context);
   var domEl = projectObject.dom_el;
   $(domEl).append(html);
+  // $('.proj-title').css('opacity', 0);
+  $('.github-logo').css('opacity', 0);
 };
 
 var renderCSProject = function(projectObject) {
@@ -16,8 +18,8 @@ var renderCSProject = function(projectObject) {
   $(domEl).append(html);
 };
 
-var skrollWebDev = function() {
-  var elementArray = $('#web-dev-svg').children();
+var skrollDev = function() {
+  var elementArray = $('#dev-svg');
   var scrollDuration = 15;
   skrollSVG(elementArray, scrollDuration);
 };

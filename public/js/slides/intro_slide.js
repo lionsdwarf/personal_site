@@ -21,18 +21,12 @@ var skrollLeinsdorf = function() {
 
 var skrollDotNYC = function() {
   var elementArray = $('#dot-nyc').children();
-  var scrollDuration = 2;
+  var scrollDuration = 7;
   skrollSVG(elementArray, scrollDuration);
 };
 
 var skrollLeinsdorfDuplicates = function() {
   var elementArray = $('#leinsdorf-duplicates').children();
   var scrollDuration = 0.5;
-  skrollSVG(elementArray, scrollDuration);
-};
-
-var skrollWelcome = function() {
-  var elementArray = $('#welcome-excl-pt').children();
-  var scrollDuration = 4;
   skrollSVG(elementArray, scrollDuration);
 };

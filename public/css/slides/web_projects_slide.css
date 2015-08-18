@@ -4,11 +4,21 @@
   background-size: cover;
 }
 
+#dev-svg {
+  stroke-dasharray: 6750;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
 .grid-container {
   width: 100%; 
   height: 90%; 
   text-align: center; 
-  margin-top: 6em;
+  margin-top: 3em;
 }
 
 .row {
@@ -40,6 +50,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   margin-bottom: 1.3em;
+  color: black;
 }
 
 .image-box {
@@ -74,8 +85,8 @@
 }
 
 .github-logo {
-  width: 2em;
-  height: 2em; 
+  width: 1.2em;
+  height: 1.2em; 
   border-radius: 0.2em; 
   display: inline-block; 
   left: 0;
@@ -93,17 +104,11 @@
   width: 100%;
 }
 
-#web-dev-svg {
-  stroke-dasharray: 750;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 
-#dev-connector {
+/*#dev-connector {
   stroke-dasharray: 1650;
 }
 
 #web-connector {
   stroke-dasharray: 1300;
-}
+}*/
